@@ -9,7 +9,7 @@ db = pymysql.connections.Connection(
     user=user,
     password=password
 )
-
+#
 cursor = db.cursor()
 cursor.execute("CREATE DATABASE IF NOT EXISTS notebooks_db_eduardo")
 cursor.execute("SHOW DATABASES")
